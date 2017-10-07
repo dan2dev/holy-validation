@@ -1,0 +1,43 @@
+{
+	"name": "holy-validation",
+	"version": "0.0.3",
+	"description": "The Holy-Validation is a simple Js library to help you implement custom validations.",
+	"main": "lib/main",
+	"types": "lib/main",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "npm run build && (npm run webpack-watch | npm run http-server)",
+		"webpack-watch": "webpack --watch",
+		"tsc-watch": "tsc -w",
+		"http-server": "http-server -p 8080 -o -c0",
+		"build": "tsc && webpack --config=webpack.min.config.js && webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dan2dev/holy-validation.git"
+	},
+	"keywords": [
+		"form",
+		"validation",
+		"valid"
+	],
+	"author": "Danilo C Castro",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/dan2dev/holy-validation/issues"
+	},
+	"homepage": "https://github.com/dan2dev/holy-validation#readme",
+	"dependencies": {
+		"utility-collection": "^1.1.0"
+	},
+	"devDependencies": {
+		"awesome-typescript-loader": "^3.2.3",
+		"http-server": "^0.10.0",
+		"source-map-loader": "^0.2.2",
+		"ts-node": "^3.3.0",
+		"typescript": "^2.5.3",
+		"uglifyjs-webpack-plugin": "^0.4.6",
+		"webpack": "^3.6.0",
+		"webpack-livereload-plugin": "^1.0.0"
+	}
+}
